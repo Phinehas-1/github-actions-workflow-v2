@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Resource {
     @GetMapping("/")
     public String index(){
-        return "Dockerized Springboot App Running";
+        return "Dockerized Springboot App Running!";
     }
 }
