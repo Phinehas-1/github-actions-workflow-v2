@@ -3,8 +3,8 @@ target/*
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!dockerizedspringboot-0.0.1.jar
-!targetreadme
+# !dockerizedspringboot-0.0.1.jar
+# !targetreadme
 
 ### STS ###
 .apt_generated
