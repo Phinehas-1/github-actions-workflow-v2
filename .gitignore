@@ -3,7 +3,7 @@ target/*
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-!*.jar
+!dockerizedspringboot-0.0.1.jar
 !targetreadme
 
 ### STS ###
