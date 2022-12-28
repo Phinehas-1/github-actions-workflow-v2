@@ -4,7 +4,7 @@ target/*
 !**/src/main/**/target/
 !**/src/test/**/target/
 !*.jar
-!target
+!targetreadme
 
 ### STS ###
 .apt_generated
