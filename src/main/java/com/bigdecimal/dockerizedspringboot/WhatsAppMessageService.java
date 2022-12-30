@@ -6,10 +6,11 @@ import com.twilio.rest.api.v2010.account.Message;
 
 @Service
 public class WhatsAppMessageService {
-    public final String ACCOUNT_SID = "AC209db14a24086167da78530ba9a02e7f";
-    public final String AUTH_TOKEN = "04fa1e17802fc47ec39368ab173037b6";
+    public final String ACCOUNT_SID = System.getenv("TWILIO_SID");
+    public final String AUTH_TOKEN = System.getenv("TWILIO_TOKEN");
    
     public Boolean sendTwilioMessage(WhatsAppMessage message) {
+        System.out.println(ACCOUNT_SID +" AND "+ AUTH_TOKEN);
         try {
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             Message twilioMessage = Message.creator(
