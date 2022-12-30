@@ -1,5 +1,5 @@
 ## github-actions-workflow-v2
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/phindock/docker101tutorial/dockerizedspringbootapp) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/phindock/docker101tutorial/dockerizedspringbootapp) ![Docker Pulls](https://img.shields.io/docker/pulls/phindock/docker101tutorial)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/phindock/docker101tutorial/latest) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/phindock/docker101tutorial/latest) ![Docker Pulls](https://img.shields.io/docker/pulls/phindock/docker101tutorial)
 
 ### setup
 ---
