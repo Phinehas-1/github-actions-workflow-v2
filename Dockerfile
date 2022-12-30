@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM eclipse-temurin:11-jdk-alpine
 RUN mkdir /app
 RUN ls -a
 COPY ./target/ /app
