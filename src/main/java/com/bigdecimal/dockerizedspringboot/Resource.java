@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Resource {
+    private WhatsAppMessageService messageService;
+
+    public Resource(WhatsAppMessageService messageService) {
+        this.messageService = messageService;
+    }
+    
     @GetMapping("/")
     public String index() {
         return "Dockerized Springboot App Running!";
@@ -17,6 +23,14 @@ public class Resource {
     @PostMapping("/sendMessage")
     public ResponseEntity<? extends Object> createMessageForWhatsApp(@RequestBody WhatsAppMessage message) {
         ResponseEntity<? extends Object> response = new ResponseEntity<>(message, HttpStatus.CREATED);
+        try {
+            if (messageService.sendTwilioMessage(message)) {
+                return response;
+            }
+            response = new ResponseEntity<>("Message wasn't sent.", HttpStatus.BAD_GATEWAY);
+        } catch (Exception e) {
+            response = new ResponseEntity<>(e, HttpStatus.BAD_GATEWAY);
+        }
         return response;
     }
 }
