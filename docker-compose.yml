@@ -22,7 +22,7 @@ services:
   app:
     depends_on:
       - adminer
-    image: phindock/docker101tutorial:dockerizedspringbootapp
+    image: phindock/docker101tutorial:latest
     ports:
       - 8081:8080
     container_name: dockerizdspringbootapp

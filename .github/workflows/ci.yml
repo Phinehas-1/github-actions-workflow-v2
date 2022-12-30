@@ -39,4 +39,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: phindock/docker101tutorial:dockerizedspringbootapp
+        tags: phindock/docker101tutorial:latest
